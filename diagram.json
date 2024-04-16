@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -511.8, "left": 540.4, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 125.4, "left": -29.4, "attrs": {} },
+    { "type": "wokwi-7segment", "id": "sevseg1", "top": -33.42, "left": 101.08, "attrs": {} }
+  ],
+  "connections": [
+    [ "bb1:bp.15", "bb1:bp.14", "green", [ "v0" ] ],
+    [ "uno:1", "sevseg1:A", "green", [ "v-230.4", "h-63" ] ],
+    [ "uno:2", "sevseg1:B", "green", [ "v-211.2", "h-53.5" ] ],
+    [ "uno:3", "sevseg1:C", "green", [ "v-48", "h-53.6" ] ],
+    [ "uno:4", "sevseg1:D", "green", [ "v-38.4", "h-5.7" ] ],
+    [ "uno:5", "sevseg1:E", "green", [ "v-28.8", "h-73" ] ],
+    [ "uno:6", "sevseg1:F", "green", [ "v-19.2", "h-159.5", "v-230.4", "h76.8" ] ],
+    [ "uno:7", "sevseg1:G", "green", [ "v-9.6", "h-92.4", "v-182.4", "h19.2" ] ],
+    [ "uno:8", "sevseg1:DP", "green", [ "v0" ] ],
+    [ "uno:GND.1", "sevseg1:COM.1", "black", [ "v-67.2", "h0.3" ] ],
+    [ "uno:5V", "sevseg1:COM.2", "red", [ "v28.7", "h-178.6", "v-508.8", "h172.8" ] ]
+  ],
+  "dependencies": {}
+}
